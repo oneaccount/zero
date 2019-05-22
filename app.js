@@ -16,8 +16,9 @@ init();
 document.querySelector('.btn-roll').addEventListener('click', function () {
     if(gamePlaying){
         var dice = Math.floor(Math.random() * 6) + 1;
+        console.log(dice);
         document.querySelector('.dice').style.display = 'block';
-        document.querySelector('.dice').src = 'dice-' + dice + '.png';
+        document.querySelector('.dice').src = 'images/dice-' + dice + '.png';
 
         if (dice !== 1) {
             roundScore += dice;
